@@ -51,16 +51,16 @@ public class Conditional {
         }
         // else is default case when all the above conditions are false
         else{ 
-
             System.out.println("Grade:F");
         }
 
         //nested if statement
         System.out.println("nested if statement");
-        boolean coursesubscription = true;
-        System.out.println("Course subscription: " + coursesubscription);
-        int problemsolved=51;
-        System.out.println("Problems solved: "+problemsolved);
+        System.out.println("Do you have course subscription? (true/false)");
+        boolean coursesubscription=sc.nextBoolean();
+        
+        System.out.println("Enter the number of problems solved:");
+        int problemsolved=sc.nextInt();
         if (coursesubscription){
             if (problemsolved>=45){
                 System.out.println("You have Unlock new badge");
@@ -74,8 +74,9 @@ public class Conditional {
         // ternary operator
         System.out.println("ternary operator");
         int age1=20;
+        System.out.println("Age: "+age1);
         boolean ans= (age1>=18) ? true:false;
-        System.out.println("Answer: "+ans);
+        System.out.println("You are an adult: "+ans);
 
         // switch case statement
         System.out.println("switch case statement");
