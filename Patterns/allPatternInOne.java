@@ -1,4 +1,5 @@
-public class Pattern {
+package Patterns;
+public class allPatternInOne {
     public static void main(String[] args) {
         // pattern solid square
         // int n=5;
