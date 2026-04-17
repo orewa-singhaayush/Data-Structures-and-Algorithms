@@ -1,4 +1,4 @@
-// there are  6 type of conditional statement in java viz. if,if-else,if-else-if ladder,nested if,ternary opertaor and switch case statement. a conditional statement is a statement that performs different actions based on different conditions. it is used to make decisions in a program.
+package JavaBasic;// there are  6 type of conditional statement in java viz. if,if-else,if-else-if ladder,nested if,ternary opertaor and switch case statement. a conditional statement is a statement that performs different actions based on different conditions. it is used to make decisions in a program.
 
 import java.util.*;
 

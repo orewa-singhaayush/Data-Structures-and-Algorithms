@@ -1,3 +1,5 @@
+package JavaBasic;
+
 import java.math.BigInteger;
 import java.util.Scanner;
 public class Input_Output {

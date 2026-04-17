@@ -1,3 +1,5 @@
+package JavaBasic;
+
 // Data types in Java are used to specify the type of data that a variable can hold. Java has two categories of data types: primitive and Non primitive. Primitive data types include byte, short, int, long, float, double, char, and boolean. Non primitive data types include classes, interfaces, and arrays. Each data type has a specific size and range of values it can hold.
 public class Datatype {
     public static void main(String[] args) {

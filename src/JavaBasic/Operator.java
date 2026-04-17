@@ -1,3 +1,5 @@
+package JavaBasic;
+
 // operators-special symbols thatb perform specific operations on one, two or three operands and then return a result
 public class Operator{
     public static void main(String[] args) {
