@@ -61,7 +61,37 @@ public class BasicsMaths {
             System.out.println("Not a Palindrome Number");
         }
     }
+    static void isPrimeNum(int num) {
+        System.out.println("Problem 6: Chech if Prime Number or not");
+        if (num <= 1) {
+            System.out.println("Number is not a Prime Number");
+            return;
+        }
 
+        boolean isPrime = true;
+
+        for (int i = 2; i <= num / 2; i++) {
+            if (num % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+
+        if (isPrime) {
+            System.out.println("Number is a Prime Number");
+        } else {
+            System.out.println("Number is not a Prime Number");
+        }
+    }
+
+    static void factorialnum(int num){
+        int fact = 1;
+        System.out.println("Problem 7: Factorial");
+        for (int i = 1; i <= num; i++) {
+            fact = fact * i;
+        }
+        System.out.println("Factorial of number is: "+fact);
+    }
     static void main() {
         Scanner sc=new Scanner (System.in);
         System.out.print("Enter the number of your choice:");
@@ -75,6 +105,10 @@ public class BasicsMaths {
         reverseNumber(num);
         System.out.println();
         palindromeNum(num);
+        System.out.println();
+        isPrimeNum(num);
+        System.out.println();
+        factorialnum(num);
 
 
     }
