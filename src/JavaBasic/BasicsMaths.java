@@ -70,7 +70,14 @@ public class BasicsMaths {
 
         boolean isPrime = true;
 
-        for (int i = 2; i <= num / 2; i++) {
+//        for (int i = 2; i <= num / 2; i++) {
+//            if (num % i == 0) {
+//                isPrime = false;
+//                break;
+//            }
+//        }
+//        using sqrt logic
+        for (int i = 2; i *i<= num / 2; i++) {
             if (num % i == 0) {
                 isPrime = false;
                 break;
@@ -91,7 +98,45 @@ public class BasicsMaths {
             fact = fact * i;
         }
         System.out.println("Factorial of number is: "+fact);
+
     }
+
+    static int gcdofNum(int a, int b){
+
+        while(b !=0){
+            int oldvalueofb = b;
+            b = a%b;
+            a = oldvalueofb;
+        }
+        int ans = a;
+        return ans;
+    }
+
+    static int lcmofNum(int a,int b){
+        System.out.println("Problem 9: LCM");
+        int gcd= gcdofNum(a,b);
+        int lcm = a*b/gcd;
+        return lcm;
+    }
+
+    static boolean isArmstrong(int num){
+        System.out.println("Problem 10: Armstrong Number");
+        int sum=0;
+        int originalnum = num;
+        while(num!=0){
+            int digit=num%10;
+            int cubeofDigit = digit*digit*digit;
+            sum=sum+cubeofDigit;
+            num=num/10;
+        }
+        if(sum==originalnum){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
     static void main() {
         Scanner sc=new Scanner (System.in);
         System.out.print("Enter the number of your choice:");
@@ -109,6 +154,18 @@ public class BasicsMaths {
         isPrimeNum(num);
         System.out.println();
         factorialnum(num);
+        System.out.println();
+        System.out.println("Problem 8: GCD (Greatest Common Divisor)");
+        System.out.print("Enter the value of A: ");
+        int a= sc.nextInt();
+        System.out.print("Enter the value of B: ");
+        int b= sc.nextInt();
+        System.out.println("GCD of A and B are:  "+ gcdofNum(a,b));
+        System.out.println();
+        System.out.println("LCM of A and B are:  "+ lcmofNum(a,b));
+        System.out.println();
+        System.out.println("The Number is a Armstrong? "+isArmstrong(num));
+
 
 
     }
